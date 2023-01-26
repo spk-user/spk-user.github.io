@@ -47,6 +47,42 @@ nav {
     padding: 10px;
 }
 
+ol {
+    font-weight: 700;
+}
+
+li {
+    font-weight: 500;
+}
+
+.nav img {
+    height: 50px;
+}
+
+.black img {
+    filter: grayscale(100%);
+}
+
+.black img:hover {
+    filter: grayscale(0%);
+}
+
+.duo {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.panel {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .nav {
     flex-wrap: wrap;
     display: flex;
