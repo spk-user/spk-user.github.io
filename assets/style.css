@@ -2,29 +2,83 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 html,
 body {
     padding: 0px;
     margin: 0px;
     background-color: #f2f4f8;
     color: #212121;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logo {
+    height: 60px;
 }
 
 main {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
     min-height: 80vh;
 }
 
+.hello {
+    width: 100%;
+    height: 90vh;
+    background-image: url(/assets/img/back.webp);
+    background-attachment: fixed;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    background-size: cover;
+    background-position: center, center;
+    background-repeat: repeat;
+}
+
+nav {
+    width: 100%;
+    max-width: 500px;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hello .text {
+    background-color: #13131380;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 20px 10px 10px 10px;
+}
+
+.hello .text .mini {
+    color: #ffffffbe;
+}
+
 header {
-    position: fixed;
+    position: sticky;
     top: 0px;
     left: 0px;
     width: 100%;
     background-color: #fff;
     padding: 10px;
+    z-index: 10;
 }
 
 .header {
